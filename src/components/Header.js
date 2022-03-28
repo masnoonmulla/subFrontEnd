@@ -21,7 +21,7 @@ function Header() {
               <input
                 type="text"
                 className="navSearchInput"
-                placeholder="Search Sneakers,Designers"
+                placeholder="Search Sneakers,Designers...."
               ></input>
             </div>
           </div>
