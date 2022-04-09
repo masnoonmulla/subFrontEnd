@@ -78,7 +78,7 @@
   flex-direction: column;
   border-radius: 10px;
   z-index: 2;
-  /* max-width: 355px; */
+  /* max-width: 35px; */
   /* box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px; */
 }
 
@@ -271,6 +271,17 @@
     margin-top: 340px;
 }
 
+.hwfcard {
+
+  width: fit-content !important;
+
+}
+
+.fifthSection {
+
+  height: fit-content !important;
+}
+
   .hwcard {
     place-self: center;
     transition: transform 0.1s ease-out 0s;
@@ -351,7 +362,7 @@
   max-width: 350px;
   max-height: 480px;
   margin: 0 auto;
-
+  border-bottom: 1px solid #1f1f1f;
   box-shadow: rgba(10, 10, 10, 0.1) 0px 2px 3px, rgba(10, 10, 10, 0.1) 0px 0px 0px 1px;
 }
  .card .header {
@@ -475,9 +486,29 @@
   margin-bottom: 120px;
   display: flex;
   background-color: #f1f1f1;
-  height: 500px;
+  height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../../assets/gritty\ gradient2.png");
+  background-image: url("../../assets/gritty gradient3.png");
+}
+
+.hwfcard {
+  place-self: center;
+  transition: transform 0.1s ease-out 0s;
+  border-radius: 10px;
+  display: inline-block;
+  width: 260px;
+  opacity: 70%;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.hwfiftContent {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 

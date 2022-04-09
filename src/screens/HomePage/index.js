@@ -132,14 +132,14 @@ function HomePage() {
               <div className="header">
                 <div className="avatar">
                   <img
-                    src="https://randomuser.me/api/portraits/women/67.jpg"
+                    src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                     alt=""
                   />
                 </div>
               </div>
               <div className="card-body">
                 <div className="user-meta has-text-centered">
-                  <h3 className="username">Helen Miller</h3>
+                  <h3 className="username">Jhon Doe</h3>
                   <h5 className="position">Sneaker,Bag Customiser</h5>
                 </div>
                 <div className="user-bio has-text-centered">
@@ -158,7 +158,7 @@ function HomePage() {
                 <div className="ratingRow">
                   <div className="ratingCol">
                     <img
-                      src={require("../../assets/strImg.png")}
+                      src={require("../../assets/starRating.png")}
                       style={{ width: 120 }}
                       alt=""
                     />
@@ -176,14 +176,14 @@ function HomePage() {
               <div className="header">
                 <div className="avatar">
                   <img
-                    src="https://randomuser.me/api/portraits/women/67.jpg"
+                    src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                     alt=""
                   />
                 </div>
               </div>
               <div className="card-body">
                 <div className="user-meta has-text-centered">
-                  <h3 className="username">Helen Miller</h3>
+                  <h3 className="username">Jane Doe</h3>
                   <h5 className="position">Sneaker,Bag Customiser</h5>
                 </div>
                 <div className="user-bio has-text-centered">
@@ -203,7 +203,7 @@ function HomePage() {
                 <div className="ratingRow">
                     <div className="ratingCol">
                       <img
-                        src={require("../../assets/strImg.png")}
+                        src={require("../../assets/starRating.png")}
                         style={{ width: 120 }}
                         alt=""
                       />
@@ -222,14 +222,14 @@ function HomePage() {
               <div className="header">
                 <div className="avatar">
                   <img
-                    src="https://randomuser.me/api/portraits/women/67.jpg"
+                    src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                     alt=""
                   />
                 </div>
               </div>
               <div className="card-body">
                 <div className="user-meta has-text-centered">
-                  <h3 className="username">Helen Miller</h3>
+                  <h3 className="username">Jim Doe</h3>
                   <h5 className="position">Sneaker,Bag Customiser</h5>
                 </div>
                 <div className="user-bio has-text-centered">
@@ -249,7 +249,7 @@ function HomePage() {
                 <div className="ratingRow">
                   <div className="ratingCol">
                     <img
-                      src={require("../../assets/strImg.png")}
+                      src={require("../../assets/starRating.png")}
                       style={{ width: 120 }}
                       alt=""
                     />
@@ -268,13 +268,14 @@ function HomePage() {
       <div className="fifthSection">
         <h2 className="howItWorksText"> How to sell your Art</h2>
         <div className="howItWorksContainer">
-          <div className="hwcard">
-            <div className="hwContent">
+          <div className="hwfcard">
+            <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
                   className="avaStyle"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
+                <p>Step 1</p>
               </div>
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
@@ -283,13 +284,14 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="hwcard">
-            <div className="hwContent">
+          <div className="hwfcard">
+            <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
                   className="avaStyle"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
+                <p>Step 2</p>
               </div>
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
@@ -298,13 +300,14 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="hwcard">
-            <div className="hwContent">
+          <div className="hwfcard">
+            <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
                   className="avaStyle"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
+                <p>Step 3</p>
               </div>
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
@@ -312,21 +315,23 @@ function HomePage() {
               versions of Lorem Ipsum.
             </div>
           </div>
-          
-          {/* <div className="hwcard">
-            <div className="hwContent">
+
+          <div className="hwfcard">
+            <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
                   className="avaStyle"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
+                <p>Step 4</p>
               </div>
               It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
               desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
-          </div> */}
+          </div>
+        
 
 
         </div>
