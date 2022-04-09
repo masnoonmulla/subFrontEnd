@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './screens/HomePage';
+import CategoryScreen from './screens/CategoryScreen';
+
 
 function App() {
   return (
     <div className="App">
       <HomePage/>
+      {/* <CategoryScreen/> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
