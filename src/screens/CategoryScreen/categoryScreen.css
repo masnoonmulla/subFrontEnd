@@ -70,12 +70,12 @@
 .panelFliter {
   box-sizing: border-box;
   z-index: 10;
-  position: sticky;
+  /* position: sticky; */
   bottom: 0px;
   top: 72px;
   flex-shrink: 0;
   align-self: flex-start;
-  height: calc(100vh - 72px);
+  height: fit-content;
   border-right: 1px solid grey;
   width: 340px;
 }
@@ -112,4 +112,65 @@
   margin-top: 30px;
   font-size: 17px;
   font-weight: 600;
+}
+
+.containerMain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: auto;
+  align-content: start;
+}
+.items {
+  flex: 0 0 auto;
+  margin: 20px;
+  margin-left: 52px;
+}
+
+.hiddenele { visibility: hidden }
+
+.rangeSliderStyle {
+  margin: 20px;
+  width: 180px;
+}
+
+
+
+/* CSS */
+.tagsItem {
+  width: fit-content;
+  margin-bottom: 10px;
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 20px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 10px 12px;
+  text-align: center;
+  margin-left: 2px;
+}
+
+.checkBoxItem {
+  position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    margin-bottom: 12px;
+}
+
+
+.listCat {
+  list-style: none;
+}
+
+.catItem {
+  text-align: initial;
+  padding: 10px
 }

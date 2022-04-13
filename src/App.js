@@ -7,8 +7,8 @@ import CategoryScreen from './screens/CategoryScreen';
 function App() {
   return (
     <div className="App">
-      <HomePage/>
-      {/* <CategoryScreen/> */}
+      {/* <HomePage/> */}
+      <CategoryScreen/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
