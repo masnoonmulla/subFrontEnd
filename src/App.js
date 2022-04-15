@@ -2,27 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 import HomePage from './screens/HomePage';
 import CategoryScreen from './screens/CategoryScreen';
+import { BrowserRouter,  Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
       {/* <HomePage/> */}
-      <CategoryScreen/>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      {/* <CategoryScreen/> */}
+
+      <BrowserRouter>
+        <div>
+          
+            <Routes>
+             <Route path="/" element={<HomePage/>} exact/>
+             <Route path="/discover" element={<CategoryScreen/>}/>
+             
+            <Route component={Error}/>
+           </Routes>
+        </div> 
+      </BrowserRouter>
+    
     </div>
   );
 }
