@@ -47,6 +47,7 @@
 
 .catText {
   margin-top: 120px;
+  text-decoration: underline;
   font-size: 45px;
   color: azure;
 }
