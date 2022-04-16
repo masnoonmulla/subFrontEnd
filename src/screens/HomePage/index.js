@@ -48,14 +48,11 @@ function HomePage() {
             <div className="hwContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
-                  src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
+                  className="avaStyleHome"
+                  src="https://res.cloudinary.com/subjective/image/upload/v1650090204/Explore_from_a_wide_range_of_artist_and_find_the_perfect_match.-01_gv7uoc.png"
                 />
               </div>
-              It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Explore from a wide range of artist and find the perfect match.
             </div>
           </div>
 
@@ -63,14 +60,11 @@ function HomePage() {
             <div className="hwContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
-                  src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
+                  className="avaStyleHome"
+                  src="https://res.cloudinary.com/subjective/image/upload/v1650090204/Choose_a_product_you_want_to_customize-01_lcw7db.png"
                 />
               </div>
-              It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Choose a product you want to customise
             </div>
           </div>
 
@@ -78,43 +72,55 @@ function HomePage() {
             <div className="hwContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
-                  src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
+                  className="avaStyleHome"
+                  src="https://res.cloudinary.com/subjective/image/upload/v1650090204/Purchase_a_slot_or_join_the_waitlist_-01_gn4c1j.png"
                 />
               </div>
-              It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including
-              versions of Lorem Ipsum.
+              Purchase a slot or join the waitlist!
             </div>
           </div>
+
+          <div className="hwcard">
+            <div className="hwContent">
+              <div className="hwAvatar">
+                <img
+                  className="avaStyleHome"
+                  src="https://res.cloudinary.com/subjective/image/upload/v1650090564/connec_ehuiek.png"
+                />
+              </div>
+              Connect with the artist and watch.
+            </div>
+          </div>
+
+
+
         </div>
       </div>
 
       <div className="thirdSection">
         <h2 className="howItWorksText"> Customization Categories </h2>
         <div className="howItWorksContainer">
-          <div className="catGroup">
+          <div className="catGroupHome">
             <img
-              className="avaStyle"
+              className="avaStyleHome"
               src={require("../../assets/sneakersCat.jpg")}
             />
 
             <p className="categoryText"> Sneakers</p>
           </div>
 
-          <div className="catGroup">
+          <div className="catGroupHome">
             <img
-              className="avaStyle"
+              className="avaStyleHome"
               src={require("../../assets/t-shirt.jpg")}
             />
 
             <p className="categoryText">Clothing</p>
           </div>
 
-          <div className="catGroup">
+          <div className="catGroupHome">
             <img
-              className="avaStyle"
+              className="avaStyleHome"
               src={require("../../assets/bagcat.jpg")}
             />
 
@@ -272,7 +278,7 @@ function HomePage() {
             <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
+                  className="avaStyleHome"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
                 <p>Step 1</p>
@@ -288,7 +294,7 @@ function HomePage() {
             <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
+                  className="avaStyleHome"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
                 <p>Step 2</p>
@@ -304,7 +310,7 @@ function HomePage() {
             <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
+                  className="avaStyleHome"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
                 <p>Step 3</p>
@@ -320,7 +326,7 @@ function HomePage() {
             <div className="hwfiftContent">
               <div className="hwAvatar">
                 <img
-                  className="avaStyle"
+                  className="avaStyleHome"
                   src="https://www.playtoearn.online/wp-content/uploads/2021/10/Bored-Ape-Yacht-Club-NFT-avatar.png"
                 />
                 <p>Step 4</p>

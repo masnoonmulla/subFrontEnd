@@ -1062,8 +1062,8 @@ function CategoryScreen() {
           <Sheet.Container>
             <Sheet.Header />
             <Sheet.Content>
-              <div className="containerMain">
-                <div className="items">
+              <div className="containerFilResp">
+                <div className="itemFilter">
                   Sort By:
                   <select name="cars" id="cars" className="dropDwnstyle">
                     <option value="volvo">Top Rated</option>
@@ -1072,7 +1072,7 @@ function CategoryScreen() {
                     <option value="audi">Top Rated</option>
                   </select>
                 </div>
-                <div className="items">
+                <div className="itemFilter">
                   Price Range:
                   <span className="hiddenele"> hidden element </span>
                   <input
@@ -1083,7 +1083,7 @@ function CategoryScreen() {
                     defaultValue="50"
                   />
                 </div>
-                <div className="items">
+                <div className="itemFilter">
                   Style Tags:
                   <span className="hiddenele"> hidden element </span>
                   <ul>
@@ -1096,7 +1096,7 @@ function CategoryScreen() {
                     <li className="tagsItem">View More</li>
                   </ul>
                 </div>
-                <div className="items">
+                <div className="itemFilter">
                   Category:
                   <span className="hiddenele"> hidden element </span>
                   <ul className="listCat">
@@ -1111,7 +1111,7 @@ function CategoryScreen() {
                     </li>
                   </ul>
                 </div>
-                <div className="items">
+                <div className="itemFilter">
                   Availbilty:
                   <select name="cars" id="cars" className="dropDwnstyle">
                     <option value="volvo">1-2 Weeks</option>

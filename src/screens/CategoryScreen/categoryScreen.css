@@ -185,6 +185,19 @@
   bottom: 0;
 }
 
+.containerFilResp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: auto;
+  align-content: start
+}
+.itemFilter {
+  flex: 0 0 auto;
+  margin: 10px;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 480px) {
   .panelFliter {
     display: none;
