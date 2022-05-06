@@ -1,0 +1,21 @@
+.dashHeader {
+    width: 100%;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0;
+    display: block;
+    background-color: #f1f1f1;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/gritty gradient3.png");
+}
+
+#round{
+    margin-left: 10%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+}
