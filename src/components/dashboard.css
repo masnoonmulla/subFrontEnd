@@ -1,21 +1,107 @@
 .dashHeader {
-    width: 100%;
-    flex-direction: column;
+    /* width: 100%; */
+    /* flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    margin: 0;
-    display: block;
+    margin: 0; */
+    /* display: block; */
     background-color: #f1f1f1;
     height: 250px;
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     background-image: url("../assets/gritty gradient3.png");
+    object-fit: cover;
 }
 
-#round{
+#round {
     margin-left: 10%;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: gray;
+}
+
+.productCarousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2.5em 0;
+}
+
+.productList {
+    display: flex;
+    justify-content: left;
+    overflow-x: auto;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.productList::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+#wrapper {
+    padding: 20px;
+}
+
+.cardImg {
+    position: relative;
+    margin: 0 auto;
+    /* padding: 1rem; */
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.productCard {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 0.5rem 1rem;
+    margin-left: 0;
+    border: 0;
+    width: fit-content;
+}
+
+#circle {
+    background-color: #fff;
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#parent {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*horizontal alignmennt*/
+    align-items: center;
+    /**vertical alignment baseline value alignment on the basis of text base/
+    flex-wrap:no-wrap;/*doesnt over flow the childs*/
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*horizontal alignmennt*/
+    align-items: center;
+}
+
+.cardImg{
+    background-image: url('../assets/bagcat.jpg');
+    object-fit: cover;
+    background-size: cover;
+    height: 100px;
+    width: 500px;
+}
+
+.card{
+    border-radius: 12px;
 }
