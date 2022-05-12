@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home-page.css";
 import Header from "../../components/Header";
 import Carousel from "react-grid-carousel";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+  let history = useNavigate();
+  let token = localStorage.getItem("token");
+  useEffect(() => {
+    if (token) {
+      history("/discover");
+    }
+  }, []);
   return (
     <>
       <Header />
@@ -25,7 +33,7 @@ function HomePage() {
             <h1 className="firstDescTitle">Mission Statment</h1>
 
             <span className="subHeaderTitle">
-            Art is a medium of expression for us. We at Subjective believe in being true to ourselves and embodying our own uniqueness. Wear who you are!
+              Art is a medium of expression for us. We at Subjective believe in being true to ourselves and embodying our own uniqueness. Wear who you are!
             </span>
 
             <div className="buttonContainer">
@@ -204,21 +212,21 @@ function HomePage() {
                   <p className="sugButton"> #fanart </p>
                   <p className="sugButton"> #fanart </p>
 
-                 
+
                 </div>
                 <div className="ratingRow">
-                    <div className="ratingCol">
-                      <img
-                        src={require("../../assets/starRating.png")}
-                        style={{ width: 120 }}
-                        alt=""
-                      />
-                      <p> Rating </p>
-                    </div>
-                    <div className="ratingCol">
-                      <p> Price Range: 5k-10K </p>
-                    </div>
+                  <div className="ratingCol">
+                    <img
+                      src={require("../../assets/starRating.png")}
+                      style={{ width: 120 }}
+                      alt=""
+                    />
+                    <p> Rating </p>
                   </div>
+                  <div className="ratingCol">
+                    <p> Price Range: 5k-10K </p>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -337,7 +345,7 @@ function HomePage() {
               versions of Lorem Ipsum.
             </div>
           </div>
-        
+
 
 
         </div>

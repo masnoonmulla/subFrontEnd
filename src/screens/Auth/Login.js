@@ -28,7 +28,11 @@ const Login = () => {
                 localStorage.setItem('token', resData.token);
                 localStorage.setItem('data', resData.data);
                 setShowModal(true);
-                // history('/', { replace: true });
+                if (type === "Customer") {
+                    history('/discover', { replace: true });
+                } else {
+                    history('/artist-dashboard', { replace: true });
+                }
                 setButtonDisabled(false);
             }).catch(err => {
                 console.log(err);
@@ -125,18 +129,18 @@ const Login = () => {
                             isSignedIn={false}
                         />
                         :
-                    <>
-                        <p style={{textAlign:'center'}}>
-                            <Spinner
-                                // style={{ width: "0.7rem", height: "0.7rem" }}
-                                color="primary"
-                                style={{ alignSelf: 'center' }}
-                                size='sm'
-                            />
-                            &emsp;Please Wait
-                        </p>
+                        <>
+                            <p style={{ textAlign: 'center' }}>
+                                <Spinner
+                                    // style={{ width: "0.7rem", height: "0.7rem" }}
+                                    color="primary"
+                                    style={{ alignSelf: 'center' }}
+                                    size='sm'
+                                />
+                                &emsp;Please Wait
+                            </p>
 
-                    </>
+                        </>
                 }
             </Card>
 
