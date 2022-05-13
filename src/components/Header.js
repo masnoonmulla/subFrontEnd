@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
+import { GoogleLogout } from 'react-google-login';
+
+const CLIENT_ID = '442672740622-69rg2oook8g6r8u7ebjuc6vd47ugm65q.apps.googleusercontent.com';
 
 function Header() {
+  let history = useNavigate();
+  let token = localStorage.getItem('token');
+
   return (
     <header className="header">
       <a href="" className="logo">
@@ -32,7 +38,25 @@ function Header() {
           <a href="#about">Orders</a>
         </li>
         <li>
-          <Link to={'/login'}>Login</Link>
+          {
+            token ?
+              <GoogleLogout
+                buttonText="Logout"
+                render={renderProps => (
+                  <a href="#" onClick={renderProps.onClick} disabled={renderProps.disabled}>Logout</a>
+                )}
+                onLogoutSuccess={(response) => {
+                  console.log({ response });
+                  localStorage.removeItem("token");
+                  history("/", { replace: true })
+                }}
+                onFailure={(response) => console.log({ response })}
+                cookiePolicy={'single_host_origin'}
+                clientId={CLIENT_ID}
+              />
+              :
+              <Link to={'/login'}>Login</Link>
+          }
         </li>
       </ul>
     </header>

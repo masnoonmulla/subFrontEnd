@@ -4,8 +4,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Sheet from "react-modal-sheet";
 import "./categoryScreen.css";
+import { Link, useNavigate } from "react-router-dom";
 
 function CategoryScreen() {
+  const navigate = useNavigate();
+
   const [isOpen, setOpen] = React.useState(false);
   return (
     <>
@@ -21,7 +24,7 @@ function CategoryScreen() {
                   src={require("../../assets/sneakersCat.jpg")}
                 />
               </div>
-              
+
               <p className="categoryText"> Sneakers</p>
             </Tab>
             <Tab>
@@ -122,7 +125,7 @@ function CategoryScreen() {
                           />
                         </div>
                       </div>
-                      <div className="card-body">
+                      <Link to='/artist-details' className="card-body linkCard">
                         <div className="user-meta has-text-centered">
                           <h3 className="username">Jhon Doe</h3>
                           <h5 className="position">Sneaker,Bag Customiser</h5>
@@ -153,7 +156,7 @@ function CategoryScreen() {
                             <p> Price Range: 5k-10K </p>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
                   <div className="itemCard">
@@ -1054,7 +1057,7 @@ function CategoryScreen() {
           </TabPanel>
 
           <div className="button-bar">
-          <button  className="buttonFilt" onClick={() => setOpen(true)}>Filter</button>
+            <button className="buttonFilt" onClick={() => setOpen(true)}>Filter</button>
           </div>
         </Tabs>
 
