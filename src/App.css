@@ -1,3 +1,11 @@
+:root {
+    --white: #FFFFFF;
+    --subtext: #8E8E8E;
+    --text:#0B0A14;
+    --white-alt: #FAFFFF;
+    --lighteraccent: #EFEDFF;
+}
+
 body {
     background-color: #f1f1f1;
 }

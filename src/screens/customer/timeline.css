@@ -1,0 +1,10 @@
+.timelineContainer {
+    margin: 30px;
+}
+
+.timelineCard {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 10px;
+}
