@@ -7,9 +7,10 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './screens/Auth/Login';
 import Dashboard from './components/Dashboard';
 import { useEffect } from 'react';
+import Timeline from './screens/customer/Timeline';
 
 
-function App() {  
+function App() {
   return (
     <div className="App">
       <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} exact />
           <Route path="/discover" element={<CategoryScreen />} />
           <Route path="/artist-dashboard" element={<ArtistDashboard />} />
+          <Route path='/timeline' element={<Timeline />} />
           <Route component={Error} />
         </Routes>
       </BrowserRouter>

@@ -94,7 +94,7 @@
     align-items: center;
 }
 
-.cardImg{
+.cardImg {
     background-image: url('../assets/bagcat.jpg');
     object-fit: cover;
     background-size: cover;
@@ -102,6 +102,29 @@
     width: 500px;
 }
 
-.card{
+.card {
     border-radius: 12px;
+}
+
+.bookTicketBtn {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: #fff;
+    background-color: #8630F1;
+}
+
+.msgBtn {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    margin-left: 3%;
 }
