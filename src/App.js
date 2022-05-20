@@ -8,6 +8,7 @@ import Login from './screens/Auth/Login';
 import Dashboard from './components/Dashboard';
 import { useEffect } from 'react';
 import Timeline from './screens/customer/Timeline';
+import Customization from './screens/customer/Customization';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/discover" element={<CategoryScreen />} />
           <Route path="/artist-dashboard" element={<ArtistDashboard />} />
           <Route path='/timeline' element={<Timeline />} />
+          <Route path='/customization' element={<Customization />} />
           <Route component={Error} />
         </Routes>
       </BrowserRouter>
