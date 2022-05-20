@@ -1,5 +1,30 @@
 .timelineContainer {
-    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.timelineWrapper {
+    padding: 20px;
+    /* width: 100%; */
+    flex-grow: 8;
+    background-color: #f5f5f5;
+}
+
+#sideImg {
+    padding: 10px;
+    flex-grow: 1;
+    /* width: 10%; */
+    background-color: #f1f1f1;
+    height: 510px;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+
+    background-image: linear-gradient(to bottom, #F18630, #8630F1);
+
+    /* background-image: url("../../assets/gritty\ gradient3.png"); */
+    /* object-fit: cover; */
 }
 
 .timelineCard {
@@ -7,4 +32,52 @@
     border: 1px solid black;
     border-radius: 6px;
     padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    /* transform: rotate('180 deg'); */
+}
+
+.previewCard {
+    background-color: white;
+    text-align: center;
+}
+
+.previewPadding {
+    padding: 5px 15px 5px 15px;
+}
+
+.circle {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+}
+
+.cancelBtn {
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 25px 6px 25px;
+}
+
+.nextBtn {
+    border: 1px solid #ccc;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 6px 25px 6px 25px;
+    border-radius: 20px;
+}
+
+.timeLineRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tagContainer {
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    padding: 7px;
 }

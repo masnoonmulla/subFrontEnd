@@ -42,6 +42,7 @@
 
 .iconActive {
     background-color: var(--text);
+    color: white;
 }
 
 .iconComplete {

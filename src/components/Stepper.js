@@ -11,7 +11,7 @@ const Stepper = () => {
             <div className={`${styles.iconContainer} ${step === '/timeline' ? styles.iconContainerActive : ''}`}>
                 <div
                     className={`${styles.iconWrapper} ${step === '/timeline' ? styles.iconComplete : ''
-                        } ${step === 'customization' || step === 'payment'
+                        } ${step === '/customization' || step === 'payment'
                             ? styles.iconActive
                             : ''
                         }`}
@@ -23,7 +23,7 @@ const Stepper = () => {
             <div className={styles.iconContainer}>
                 <div
                     className={`${styles.iconWrapper} ${step === 'timeline' ? styles.iconComplete : ''
-                        } ${step === 'customization' || step === 'payment'
+                        } ${step === '/customization' || step === 'payment'
                             ? styles.iconActive
                             : ''
                         }`}
@@ -35,7 +35,7 @@ const Stepper = () => {
             <div className={styles.iconContainer}>
                 <div
                     className={`${styles.iconWrapper} ${step === 'timeline' ? styles.iconComplete : ''
-                        } ${step === 'customization' || step === 'payment'
+                        } ${step === 'payment'
                             ? styles.iconActive
                             : ''
                         }`}
