@@ -3,6 +3,7 @@ import "./home-page.css";
 import Header from "../../components/Header";
 import Carousel from "react-grid-carousel";
 import { useNavigate } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
 
 function HomePage() {
   let history = useNavigate();
@@ -16,38 +17,48 @@ function HomePage() {
     <>
       <Header />
 
-      <div className="columnsNew">
-        <div className="left-div left-text">
-          <div className="firstImgCard">
-            <div className="imgDiv">
-              <img
-                src={require("../../assets/Artboard.png")}
-                className="imgStyle"
-              ></img>
-            </div>
-          </div>
-        </div>
+      <div className="initalDiv"> 
 
-        <div className="right-div right-text">
-          <div className="firstDescContainer">
-            <h1 className="firstDescTitle">Mission Statment</h1>
-
-            <span className="subHeaderTitle">
-              Art is a medium of expression for us. We at Subjective believe in being true to ourselves and embodying our own uniqueness. Wear who you are!
-            </span>
-
-            <div className="buttonContainer">
-              <div className="firstButtonCon">
-                <a className="buttonWh">Login As Customer</a>
-              </div>
-
-              <div className="firstButtonCon">
-                <a className="buttonNew">Login As Artist</a>
+      <Container>
+        <Row >
+          <Col style={{ padding: "5px" }}>
+            <div className="firstImgCard">
+              <div className="imgDiv">
+                <img
+                  src={require("../../assets/Artboard.png")}
+                  className="imgStyle"
+                ></img>
               </div>
             </div>
-          </div>
-        </div>
+          </Col>
+
+          <Col style={{ padding: "5px" }}>
+            <div className="firstDescContainer">
+              <h1 className="firstDescTitle">Mission Statment</h1>
+
+              <span className="subHeaderTitle">
+                Art is a medium of expression for us. We at Subjective believe
+                in being true to ourselves and embodying our own uniqueness.
+                Wear who you are!
+              </span>
+
+              <div className="buttonContainer">
+                <div className="firstButtonCon">
+                  <a className="buttonWh">Login As Customer</a>
+                </div>
+
+                <div className="firstButtonCon">
+                  <a className="buttonNew">Login As Artist</a>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+
       </div>
+    
 
       <div className="secondSection">
         <h2 className="howItWorksText"> How it Works ?</h2>
@@ -99,9 +110,6 @@ function HomePage() {
               Connect with the artist and watch.
             </div>
           </div>
-
-
-
         </div>
       </div>
 
@@ -123,7 +131,7 @@ function HomePage() {
               src={require("../../assets/t-shirt.jpg")}
             />
 
-            <p className="categoryText">Clothing</p>
+            <p className="categoryText">Merchandise</p>
           </div>
 
           <div className="catGroupHome">
@@ -132,7 +140,7 @@ function HomePage() {
               src={require("../../assets/bagcat.jpg")}
             />
 
-            <p className="categoryText">Bag</p>
+            <p className="categoryText">Others</p>
           </div>
         </div>
       </div>
@@ -211,8 +219,6 @@ function HomePage() {
                   <p className="sugButton"> #fanart </p>
                   <p className="sugButton"> #fanart </p>
                   <p className="sugButton"> #fanart </p>
-
-
                 </div>
                 <div className="ratingRow">
                   <div className="ratingCol">
@@ -227,7 +233,6 @@ function HomePage() {
                     <p> Price Range: 5k-10K </p>
                   </div>
                 </div>
-
               </div>
             </div>
           </Carousel.Item>
@@ -258,7 +263,6 @@ function HomePage() {
                   <p className="sugButton"> #fanart </p>
                   <p className="sugButton"> #fanart </p>
                 </div>
-
 
                 <div className="ratingRow">
                   <div className="ratingCol">
@@ -345,9 +349,6 @@ function HomePage() {
               versions of Lorem Ipsum.
             </div>
           </div>
-
-
-
         </div>
       </div>
     </>
