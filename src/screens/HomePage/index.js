@@ -61,7 +61,7 @@ function HomePage() {
     
 
       <div className="secondSection">
-        <h2 className="howItWorksText"> How it Works ?</h2>
+        <h2 className="howItWorksText"> How it Works?</h2>
         <div className="howItWorksContainer">
           <div className="hwcard">
             <div className="hwContent">
