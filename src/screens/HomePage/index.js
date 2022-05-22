@@ -20,7 +20,7 @@ function HomePage() {
       <div className="initalDiv"> 
 
       <Container>
-        <Row >
+        <Row  style={{width: 'inherit'}}   >
           <Col style={{ padding: "5px" }}>
             <div className="firstImgCard">
               <div className="imgDiv">
